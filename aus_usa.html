@@ -18,7 +18,11 @@
             var chart = new google.visualization.AnnotationChart(document.getElementById('chart_div'));
 
             var options = {
-              displayAnnotations: true
+              displayAnnotations: true,
+              colors: ['goldenrod','crimson'],
+              dateFormat: 'HH:mm MMMM dd, yyyy',
+              thickness: 2
+
             };
 
             chart.draw(data, options);
